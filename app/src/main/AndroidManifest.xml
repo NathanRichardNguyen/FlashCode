@@ -19,7 +19,10 @@
         <activity android:name=".MenuActivity" />
         <activity android:name=".LoopsActivity" />
         <activity android:name=".SoonActivity" />
+        <activity android:name=".TheoryActivity" />
+        <activity android:name=".TestActivity" />
 
     </application>
+
 
 </manifest>

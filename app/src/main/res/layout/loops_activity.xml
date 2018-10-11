@@ -108,7 +108,6 @@
                         android:layout_marginTop="0dp"
                         android:text="Get yourself familiar with the basics of the concept with our summary and syntax!"
                         android:textColor="#6f6f6f"
-                        android:textFontWeight="bold"
                         android:textSize="12sp" />
 
                     </LinearLayout>
