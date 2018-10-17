@@ -38,6 +38,7 @@ public class FlashcardActivity extends AppCompatActivity {
         setContentView(R.layout.activity_flashcard);
         questiontext = findViewById(R.id.questiontext);
         answertext = findViewById(R.id.answertext);
+        scanbtn = findViewById(R.id.scbutton);
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             Log.d(TAG, "onCreate: Camera permissions not set");
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST);

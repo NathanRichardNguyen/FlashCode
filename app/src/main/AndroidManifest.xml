@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CAMERA " />
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -56,10 +57,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScanActivity" />
-
-
-
-        <activity android:name=".QRDownloadActivity"></activity>
+        <activity android:name=".QRDownloadActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
 
         <activity android:name=".FlashcardActivity">
             <intent-filter>
@@ -67,8 +70,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
->>>>>>> 1ccfce24ec39db1092413b65f939242649f8ca11
-
     </application>
 
 </manifest>
