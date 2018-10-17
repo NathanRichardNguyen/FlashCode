@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">FlashCode</string>
+    <string name="theoryblock1"> In Java, loops are a useful tool by allowing the execution of a statement or method repeatedly. In all cases, functions are repeated until a certain condition is evaluated to true. Therefore, it is vital to include a condition inside the initialization of the loop or else it would not work!
+    \n \nThere are three main types of loop execution which provide a similar basic functionality but differ in their syntax and when they check the condition evaluation.
+    </string>
+
+    <string name="forloopcomponents">
+        •	INITIALIZATION CONDITION:
+        \nThe variable is initialized here, beginning the for loop. A previously declared variable can be used or a new variable is declared, local to the loop.
+        \n\n•	TESTING CONDITION:
+        \nThe loop is executed until the testing condition returns a Boolean value of ‘false’ and is the exit condition for the loop. The condition is checked before the execution of loop statements.
+        \n\n•	INCREMENT/DECREMENT:
+        \nUpdates the declared variable for the next iteration.
+        \n\n•	STATEMENTS:
+        \nOnce the testing condition returns a Boolean value of true, the statement in the loop body is executed.
+        \n\n•	TERMINATION:
+        \nThe loop is terminated when the condition evaluates to false.
+    </string>
+
 </resources>

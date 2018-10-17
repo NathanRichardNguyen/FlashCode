@@ -14,9 +14,9 @@
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
         android:columnCount="2"
         android:columnOrderPreserved="false"
         android:alignmentMode="alignMargins"
@@ -24,18 +24,18 @@
 
         <ImageView
             android:id="@+id/backButton"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_marginRight="320dp"
-            android:padding="2dp"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginRight="320sp"
+            android:padding="2sp"
             android:src="@drawable/back" />
 
         <ImageView
             android:id="@+id/homeButton"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:maxWidth="42dp"
-            android:maxHeight="42dp"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:maxWidth="42sp"
+            android:maxHeight="42sp"
             android:src="@drawable/home" />
 
     </GridLayout>
@@ -43,13 +43,14 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginRight="20dp">
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="0sp"
+        android:gravity="center"
+        android:layout_marginRight="20sp">
 
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="63dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:src="@drawable/looptitle" />
 
     </RelativeLayout>
@@ -65,12 +66,12 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/learnCard"
                 android:layout_width="wrap_content"
-                android:layout_height="180dp"
+                android:layout_height="180sp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -80,8 +81,8 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
                         android:src="@drawable/theory" />
 
                     <LinearLayout
@@ -93,8 +94,8 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="5dp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="5sp"
                         android:layout_marginTop="0dp"
                         android:text="LEARN THE THEORY"
                         android:textColor="#6f6f6f"
@@ -103,9 +104,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="0sp"
                         android:text="Get yourself familiar with the basics of the concept with our summary and syntax!"
                         android:textColor="#6f6f6f"
                         android:textSize="12sp" />
@@ -119,12 +120,12 @@
             <android.support.v7.widget.CardView
                 android:id="@+id/testCard"
                 android:layout_width="wrap_content"
-                android:layout_height="180dp"
+                android:layout_height="180sp"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -134,8 +135,8 @@
                     android:orientation="horizontal">
 
                     <ImageView
-                        android:layout_width="100dp"
-                        android:layout_height="100dp"
+                        android:layout_width="100sp"
+                        android:layout_height="100sp"
                         android:src="@drawable/test" />
 
                     <LinearLayout
@@ -147,9 +148,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="0sp"
                         android:text="TEST YOUR KNOWLEDGE"
                         android:textColor="#6f6f6f"
                         android:textSize="20sp" />
@@ -157,9 +158,9 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="15dp"
-                        android:layout_marginRight="5dp"
-                        android:layout_marginTop="0dp"
+                        android:layout_marginLeft="15sp"
+                        android:layout_marginRight="5sp"
+                        android:layout_marginTop="0sp"
                         android:text="Think you're an expert? Test yourself and get one step closer to being a Java master!"
                         android:textColor="#6f6f6f"
                         android:textSize="12sp" />

@@ -13,9 +13,9 @@
         <GridLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
             android:columnCount="2"
             android:columnOrderPreserved="false"
             android:alignmentMode="alignMargins"
@@ -23,18 +23,18 @@
 
             <ImageView
                 android:id="@+id/backButton"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_marginRight="320dp"
-                android:padding="2dp"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:layout_marginRight="320sp"
+                android:padding="2sp"
                 android:src="@drawable/back" />
 
             <ImageView
                 android:id="@+id/homeButton"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:maxWidth="42dp"
-                android:maxHeight="42dp"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:maxWidth="42sp"
+                android:maxHeight="42sp"
                 android:src="@drawable/home" />
 
         </GridLayout>
@@ -42,9 +42,10 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="20dp">
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="0sp"
+            android:gravity="center"
+            android:layout_marginRight="20sp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -67,9 +68,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -79,14 +80,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/loop" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Loops"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -101,9 +102,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -113,14 +114,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/array" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Arrays"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -135,9 +136,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -147,14 +148,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/methods" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Methods"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -169,9 +170,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -181,14 +182,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/classes" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Classes"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -203,9 +204,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -215,14 +216,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/visibility" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Visibility"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -237,9 +238,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -249,14 +250,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/error" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Errors"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -271,9 +272,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -283,14 +284,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/data" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Data Types"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
@@ -305,9 +306,9 @@
                 android:layout_height="wrap_content"
                 android:layout_rowWeight="1"
                 android:layout_columnWeight="1"
-                android:layout_margin="12dp"
-                app:cardCornerRadius="12dp"
-                app:cardElevation="10dp">
+                android:layout_margin="12sp"
+                app:cardCornerRadius="12sp"
+                app:cardElevation="10sp">
 
 
                 <LinearLayout
@@ -317,14 +318,14 @@
                     android:orientation="vertical">
 
                     <ImageView
-                        android:layout_width="80dp"
-                        android:layout_height="80dp"
+                        android:layout_width="80sp"
+                        android:layout_height="80sp"
                         android:src="@drawable/switchstmt" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="8dp"
+                        android:layout_marginTop="8sp"
                         android:text="Switch"
                         android:textColor="#6f6f6f"
                         android:textSize="18sp" />
