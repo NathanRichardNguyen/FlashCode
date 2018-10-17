@@ -8,13 +8,13 @@
 
     <ImageView
         android:id="@+id/backButton"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
         app:layout_constraintEnd_toStartOf="@+id/homeButton"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,12 +23,12 @@
 
     <ImageView
         android:id="@+id/homeButton"
-        android:layout_width="36dp"
-        android:layout_height="36dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_width="36sp"
+        android:layout_height="36sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
         app:layout_constraintBottom_toBottomOf="@+id/backButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -39,11 +39,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/backButton"
@@ -51,14 +51,14 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_height="0sp"
+        android:layout_width="0sp"
+        android:layout_marginStart="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginTop="8sp"
+        android:layout_marginEnd="8sp"
+        android:layout_marginRight="8sp"
+        android:layout_marginBottom="8sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.6"
@@ -72,7 +72,7 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/intro"
+                android:id="@+id/loopIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/theoryblock1" />
@@ -81,7 +81,7 @@
                 android:id="@+id/forLoop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="8sp"
                 android:fontFamily="monospace"
                 android:text="1. For Loops"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -91,28 +91,28 @@
                 android:id="@+id/forLoopDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="4sp"
                 android:text="The for loop is the most concise method of writing a loop, including the initialization, condition and increment/decrement condition within one line." />
 
             <ImageView
-                android:id="@+id/forSyntax"
-                android:layout_width="wrap_content"
+                android:id="@+id/forLoopSyntax"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
+                android:layout_marginTop="4sp"
                 app:srcCompat="@drawable/forsyntax" />
 
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/forLoopComponent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8sp"
+                android:layout_marginLeft="12sp"
                 android:text="@string/forloopcomponents" />
 
             <TextView
                 android:id="@+id/whileLoop"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="8sp"
                 android:fontFamily="monospace"
                 android:text="2. While Loops"
                 android:textAppearance="@style/TextAppearance.AppCompat.Title"
@@ -125,10 +125,54 @@
                 android:text="The loop allows the code to be executed based on a testing condition which once again, should return a Boolean value. It can also be thought as a repeating ‘if’ statement! " />
 
             <ImageView
-                android:id="@+id/imageView3"
+                android:id="@+id/whileSyntax"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@drawable/whilesyntax" />
+
+            <TextView
+                android:id="@+id/whileLoopComponents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:text="@string/whileloopcomponents"/>
+
+            <TextView
+                android:id="@+id/doWhileLoop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:text="3. Do-While Loop"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/doWhileLoopDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="A do-while loop is similar to a while loop, however the testing condition is checked after execution of the statement. There is no checking of the condition during the first iteration."
+                />
+
+            <ImageView
+                android:id="@+id/doWhileSyntax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/dowhilesyntax" />
+
+            <TextView
+                android:id="@+id/doWhileLoopComponents"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12sp"
+                android:text="@string/dowhileloopcomponents"/>
+
+            <TextView
+                android:id="@+id/endDoWhile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="It is important to remember the do-while loop executes the statement at least once before any condition is checked!"/>
 
         </LinearLayout>
     </ScrollView>

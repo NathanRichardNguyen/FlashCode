@@ -11,10 +11,36 @@
         \nThe loop is executed until the testing condition returns a Boolean value of ‘false’ and is the exit condition for the loop. The condition is checked before the execution of loop statements.
         \n\n•	INCREMENT/DECREMENT:
         \nUpdates the declared variable for the next iteration.
-        \n\n•	STATEMENTS:
+        \n\n•	STATEMENT(S):
         \nOnce the testing condition returns a Boolean value of true, the statement in the loop body is executed.
         \n\n•	TERMINATION:
         \nThe loop is terminated when the condition evaluates to false.
+    </string>
+
+<string name="whileloopcomponents">
+    •	BOOLEAN CONDITION:
+    \nAlso known as the testing condition, the condition is checked before execution of loop statements.
+    \n\n•	STATEMENT(S):
+    \nThe body of the loop is executed when the boolean condition returns true. The statements should contain an updated value for the variable, usually an increment/decrement for the next iteration.
+    \n\n•	TERMINATION:
+    \nThe loop is terminated when the condition evaluates to false.
+
+</string>
+
+    <string name="dowhileloopcomponents">
+    •	STATEMENT(S):
+        \nThe loop begins with an execution of the statement. Once again, this should include an updated value for the variable (of an increment/decrement) for the next iteration.
+    \n\n•	BOOLEAN CONDITION:
+        \nAlso known as the testing condition, the condition is checked after execution of loop statements. It is checked after the statement execution, if it returns ‘true’, the next iteration starts.
+    \n\n•	TERMINATION:
+        \nThe loop is terminated when the condition evaluates to false.
+
+
+</string>
+
+    <string name="download">
+        Or enter the link on your desktop:
+        \nhttps://bit.ly/2QWkR6m
     </string>
 
 </resources>

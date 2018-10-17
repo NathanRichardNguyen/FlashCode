@@ -48,9 +48,10 @@
             android:layout_marginRight="20sp">
 
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/looptitle" />
+                android:layout_width="254dp"
+                android:layout_height="119dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/scanloop" />
 
         </RelativeLayout>
 
@@ -63,7 +64,7 @@
             android:rowCount="2">
 
             <android.support.v7.widget.CardView
-                android:id="@+id/quizCard"
+                android:id="@+id/questionCard"
                 android:layout_width="wrap_content"
                 android:layout_height="180sp"
                 android:layout_rowWeight="1"
@@ -82,7 +83,7 @@
                     <ImageView
                         android:layout_width="100sp"
                         android:layout_height="100sp"
-                        android:src="@drawable/quiz" />
+                        android:src="@drawable/question" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -91,24 +92,15 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/questiontext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15sp"
                             android:layout_marginRight="5sp"
                             android:layout_marginTop="0sp"
-                            android:text="TEST OF KNOWLEDGE"
+                            android:text="questiontext"
                             android:textColor="#6f6f6f"
                             android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15sp"
-                            android:layout_marginRight="5sp"
-                            android:layout_marginTop="0sp"
-                            android:text="Take the test of knowledge by filling in the blanks, writing the output and more!"
-                            android:textColor="#6f6f6f"
-                            android:textSize="12sp" />
 
                     </LinearLayout>
 
@@ -117,7 +109,7 @@
             </android.support.v7.widget.CardView>
 
             <android.support.v7.widget.CardView
-                android:id="@+id/flashCard"
+                android:id="@+id/testCard"
                 android:layout_width="wrap_content"
                 android:layout_height="180sp"
                 android:layout_rowWeight="1"
@@ -136,7 +128,7 @@
                     <ImageView
                         android:layout_width="100sp"
                         android:layout_height="100sp"
-                        android:src="@drawable/flash" />
+                        android:src="@drawable/answer" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -145,24 +137,15 @@
                         android:orientation="vertical">
 
                         <TextView
+                            android:id="@+id/answertext"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15sp"
                             android:layout_marginRight="5sp"
                             android:layout_marginTop="0sp"
-                            android:text="QR FLASH CARDS"
+                            android:text="answertext"
                             android:textColor="#6f6f6f"
                             android:textSize="20sp" />
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="15sp"
-                            android:layout_marginRight="5sp"
-                            android:layout_marginTop="0sp"
-                            android:text="Download our question flash cards and find the answer by scanning the QR code!"
-                            android:textColor="#6f6f6f"
-                            android:textSize="12sp" />
 
                     </LinearLayout>
 
@@ -171,6 +154,27 @@
             </android.support.v7.widget.CardView>
 
         </GridLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginRight="20sp">
+
+            <Button
+                android:id="@+id/scbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="69dp"
+                android:layout_marginLeft="69dp"
+                android:layout_marginTop="8sp"
+                android:layout_marginEnd="64dp"
+                android:layout_marginRight="64dp"
+                android:layout_marginBottom="8sp"
+                android:text="Scan QR Code for answer"
+                android:textSize="14sp" />
+        </RelativeLayout>
 
     </LinearLayout>
 
