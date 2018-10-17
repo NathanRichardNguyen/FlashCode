@@ -36,8 +36,9 @@
 
     <ImageView
         android:id="@+id/title"
-        android:layout_width="384dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -60,8 +61,10 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title">
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintVertical_bias="0.0">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -72,15 +75,7 @@
                 android:id="@+id/intro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="In Java, loops are a useful tool by allowing the execution of a statement or method repeatedly. In all cases, functions are repeated until a certain condition is evaluated to true. Therefore, it is vital to include a condition inside the initialization of the loop or else it would not work! " />
-
-            <TextView
-                android:id="@+id/textView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="There are three main types of loop execution which provide a similar basic functionality but differ in their syntax and when they check the condition evaluation. "
-                android:textSize="14sp" />
+                android:text="@string/theoryblock1"/>
 
             <TextView
                 android:id="@+id/forLoop"
@@ -101,8 +96,8 @@
 
             <ImageView
                 android:id="@+id/forSyntax"
-                android:layout_width="match_parent"
-                android:layout_height="66dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="4dp"
                 app:srcCompat="@drawable/forsyntax" />
 
@@ -110,7 +105,31 @@
                 android:id="@+id/textView5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The components of the syntax include: " />
+                android:layout_marginLeft="8sp"
+                android:text="@string/forloopcomponents" />
+
+            <TextView
+                android:id="@+id/whileLoop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="monospace"
+                android:text="2. While Loops"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/whileLoopDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The loop allows the code to be executed based on a testing condition which once again, should return a Boolean value. It can also be thought as a repeating ‘if’ statement! " />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/whilesyntax" />
+
         </LinearLayout>
     </ScrollView>
 
