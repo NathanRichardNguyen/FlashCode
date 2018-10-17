@@ -57,12 +57,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScanActivity" />
+<<<<<<< HEAD
         <activity android:name=".QRDownloadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+=======
+
+        <activity android:name=".QRDownloadActivity"></activity>
+>>>>>>> 4d0073bf262fe29e3bc6e28c120817e1cfc7d03f
 
         <activity android:name=".FlashcardActivity">
             <intent-filter>
