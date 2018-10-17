@@ -55,11 +55,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScanActivity" />
-<<<<<<< HEAD
+
         <activity android:name=".QRDownloadActivity"></activity>
-=======
-        <activity android:name=".FlashcardActivity"></activity>
->>>>>>> 9a61dca3f123b2107b9de3fc80ff7d85a2a83416
+
+        <activity android:name=".FlashcardActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>
