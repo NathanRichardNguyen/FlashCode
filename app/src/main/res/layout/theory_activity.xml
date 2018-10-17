@@ -51,8 +51,8 @@
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="363dp"
-        android:layout_height="435dp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -75,7 +75,7 @@
                 android:id="@+id/intro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/theoryblock1"/>
+                android:text="@string/theoryblock1" />
 
             <TextView
                 android:id="@+id/forLoop"
