@@ -4,6 +4,7 @@
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.CAMERA " />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -55,11 +56,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".ScanActivity" />
-<<<<<<< HEAD
+        <activity android:name=".QRDownloadActivity" />
+
+        <<<<<<< HEAD
         <activity android:name=".QRDownloadActivity"></activity>
 =======
         <activity android:name=".FlashcardActivity"></activity>
 >>>>>>> 9a61dca3f123b2107b9de3fc80ff7d85a2a83416
+
+
+
     </application>
 
 </manifest>

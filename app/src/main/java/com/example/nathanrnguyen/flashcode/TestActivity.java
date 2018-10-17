@@ -29,7 +29,7 @@ public class TestActivity extends AppCompatActivity {
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(TestActivity.this, MenuActivity.class));
+                startActivity(new Intent(TestActivity.this, LoopsActivity.class));
             }
         });
 
