@@ -17,7 +17,7 @@
         \nThe loop is terminated when the condition evaluates to false.
     </string>
 
-<string name="whileloopcomponents">
+    <string name="whileloopcomponents">
     •	BOOLEAN CONDITION:
     \nAlso known as the testing condition, the condition is checked before execution of loop statements.
     \n\n•	STATEMENT(S):
@@ -42,5 +42,7 @@
         Or enter the link on your desktop:
         \nhttps://bit.ly/2QWkR6m
     </string>
+    <string name="title_activity_multiple_choice">MultipleChoiceActivity</string>
+
 
 </resources>

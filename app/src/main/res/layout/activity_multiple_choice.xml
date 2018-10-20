@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MultipleChoiceActivity"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:showIn="@layout/activity_multiple_choice">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8sp"
+        android:layout_marginLeft="8sp"
+        android:layout_marginRight="8sp"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:alignmentMode="alignMargins"
+        android:rowCount="1">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:layout_marginRight="320sp"
+            android:padding="2sp"
+            android:src="@drawable/back" />
+
+        <ImageView
+            android:id="@+id/homeButton"
+            android:layout_width="36sp"
+            android:layout_height="36sp"
+            android:maxWidth="42sp"
+            android:maxHeight="42sp"
+            android:src="@drawable/home" />
+
+    </GridLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="0sp"
+        android:layout_marginRight="20sp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8sp"
+            android:padding="20sp"
+            android:textSize="20sp"
+            android:text="Put a question here!" />
+
+    </RelativeLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:alignmentMode="alignMargins"
+        android:columnCount="2"
+        android:columnOrderPreserved="false"
+        android:rowCount="2">
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/optionA"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12sp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="10sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="8sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/answera"/>
+
+                <TextView
+                    android:id="@+id/textA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginRight="8sp"
+                    android:text="Answer A"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/optionB"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12sp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="10sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="8sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/answerb"/>
+
+                <TextView
+                    android:id="@+id/textB"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginRight="8sp"
+                    android:text="Answer B"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/optionC"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12sp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="10sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="8sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/answerc"/>
+
+                <TextView
+                    android:id="@+id/textC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginRight="8sp"
+                    android:text="Answer C"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/optionD"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:layout_margin="12sp"
+            app:cardCornerRadius="12sp"
+            app:cardElevation="10sp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_marginTop="8sp"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                    android:src="@drawable/answerd"/>
+
+                <TextView
+                    android:id="@+id/textD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8sp"
+                    android:layout_marginLeft="8sp"
+                    android:layout_marginBottom="8sp"
+                    android:layout_marginRight="8sp"
+                    android:text="Answer D"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </GridLayout>
+</LinearLayout>
