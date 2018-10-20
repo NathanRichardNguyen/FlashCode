@@ -26,6 +26,13 @@ public class TestActivity extends AppCompatActivity {
             }
         });
 
+        quizCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(TestActivity.this, MultipleChoiceActivity.class));
+            }
+        });
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

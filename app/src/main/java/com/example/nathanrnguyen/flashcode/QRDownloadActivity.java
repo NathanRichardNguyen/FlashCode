@@ -27,6 +27,13 @@ public class QRDownloadActivity extends AppCompatActivity {
             }
         });
 
+        downloadButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(QRDownloadActivity.this, GoogleDriveActivity.class));
+            }
+        });
+
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
