@@ -384,6 +384,7 @@
                 android:id="@+id/infiniteDescription"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
                 android:text="The most common pitfall regarding loops is the possibility of a never-ending loop! This usually indicates that there is an issue with the testing condition or no variable update is included in the loop, making it remain the same value which will continue to satisfy the testing condition.
                 \nFor example, if we take a look at:" />
 
@@ -395,9 +396,9 @@
                 android:layout_marginLeft="16sp"
                 android:fontFamily="monospace"
                 android:text="int x = 3;
-do {
-System.out.println(“Hello!”);
-} while (x > 0);"/>
+                \ndo {
+                \nSystem.out.println(“Hello!”);
+                \n} while (x > 0);"/>
 
             <TextView
                 android:id="@+id/infiniteExplanation"
