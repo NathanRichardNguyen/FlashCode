@@ -1,42 +1,44 @@
 <resources>
     <string name="app_name">FlashCode</string>
-    <string name="theoryblock1"> In Java, loops are a useful tool by allowing the execution of a statement or method repeatedly. In all cases, functions are repeated until a certain condition is evaluated to true. Therefore, it is vital to include a condition inside the initialization of the loop or else it would not work!
-    \n \nThere are three main types of loop execution which provide a similar basic functionality but differ in their syntax and when they check the condition evaluation.
+    <string name="theoryBlock1">
+        In Java, loops are useful to allow the execution of a set of statements or methods repeatedly. In all cases, executions are continued when a testing condition evaluates to true and terminated when the Boolean value of the condition returns false. Therefore, it is vital to include the condition in the loop or else it would not work!
+        \n\nThere are three main types of loop execution which provide a similar basic functionality but differ in their syntax and when they check the condition evaluation.
+    </string>
+
+    <string name="componentIntro">
+        The components of the loop include:
     </string>
 
     <string name="forloopcomponents">
         •	INITIALIZATION CONDITION:
-        \nThe variable is initialized here, beginning the for loop. A previously declared variable can be used or a new variable is declared, local to the loop.
+        \nThe variable is initialized here. A previously declared variable can be used or a new variable is declared, local to the loop.
         \n\n•	TESTING CONDITION:
-        \nThe loop is executed until the testing condition returns a Boolean value of ‘false’ and is the exit condition for the loop. The condition is checked before the execution of loop statements.
+        \nThe testing condition must return a Boolean value. The loop is executed until the testing condition returns ‘false’. The condition is checked before the execution of loop statements.
         \n\n•	INCREMENT/DECREMENT:
         \nUpdates the declared variable for the next iteration.
         \n\n•	STATEMENT(S):
-        \nOnce the testing condition returns a Boolean value of true, the statement in the loop body is executed.
-        \n\n•	TERMINATION:
-        \nThe loop is terminated when the condition evaluates to false.
+        \nOnce the condition returns a Boolean value of true, the statement in the loop body is executed.
     </string>
 
-    <string name="whileloopcomponents">
-    •	BOOLEAN CONDITION:
-    \nAlso known as the testing condition, the condition is checked before execution of loop statements.
-    \n\n•	STATEMENT(S):
-    \nThe body of the loop is executed when the boolean condition returns true. The statements should contain an updated value for the variable, usually an increment/decrement for the next iteration.
-    \n\n•	TERMINATION:
-    \nThe loop is terminated when the condition evaluates to false.
+    <string name="whileLoopIntro">
+        Repeats the execution statements based on a testing condition which once again, should return a Boolean value of true. It can also be thought as a repeating ‘if’ statement!
+        \n\nThe while loop is considered an event-controlled condition and should be used when the number of iterations is not known, relying the amount of repetitions on the satisfaction of the condition.
+    </string>
 
-</string>
+
+    <string name="whileloopcomponents">
+    •	TESTING CONDITION:
+        \nThe condition is checked before execution of loop statements.
+        \n\n•	STATEMENT(S):
+        \nThe body of the loop is executed when the boolean condition returns true. The statements should contain an updated value for the variable, usually an increment/decrement for the following iteration.
+    </string>
 
     <string name="dowhileloopcomponents">
     •	STATEMENT(S):
-        \nThe loop begins with an execution of the statement. Once again, this should include an updated value for the variable (of an increment/decrement) for the next iteration.
-    \n\n•	BOOLEAN CONDITION:
-        \nAlso known as the testing condition, the condition is checked after execution of loop statements. It is checked after the statement execution, if it returns ‘true’, the next iteration starts.
-    \n\n•	TERMINATION:
-        \nThe loop is terminated when the condition evaluates to false.
-
-
-</string>
+        \nThe loop begins with an execution of the statement. Once again, this should include an updated value for the variable of an increment/decrement for the following iteration.
+        \n\n•	TESTING CONDITION:
+        \nThe condition is checked after execution of loop statements. If it returns ‘true’, the next iteration starts.
+    </string>
 
     <string name="download">
         Or enter the link on your desktop:

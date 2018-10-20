@@ -75,7 +75,7 @@
                 android:id="@+id/loopIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/theoryblock1" />
+                android:text="@string/theoryBlock1" />
 
             <TextView
                 android:id="@+id/forLoop"
@@ -92,21 +92,94 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4sp"
-                android:text="The for loop is the most concise method of writing a loop, including the initialization, condition and increment/decrement condition within one line." />
+                android:text="This is the most concise method, abbreviating the initialization, condition and variable update condition within one line. The loop is a count-controlled loop and should be used when the number of iterations required is known. "/>
 
-            <ImageView
+            <TextView
                 android:id="@+id/forLoopSyntax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/border"
+                android:text="for (initialization condition,
+                \n      testing condition,
+                \n      increment/decrement)
+                \n {
+                \n   statement(s);
+                \n }"/>
+
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="4sp"
-                app:srcCompat="@drawable/forsyntax" />
+                android:text="@string/componentIntro"
+                />
+
 
             <TextView
-                android:id="@+id/forLoopComponent"
+                android:id="@+id/forInitializationTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12sp"
-                android:text="@string/forloopcomponents" />
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="1. Initialization Condition:"/>
+
+            <TextView
+                android:id="@+id/forInitialization"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The variable is initialized here. A previously declared variable can be used or a new variable is declared, local to the loop."/>
+
+            <TextView
+                android:id="@+id/forTestingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="2. Testing Condition:"/>
+
+            <TextView
+                android:id="@+id/forTesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The testing condition must return a Boolean value. The loop is executed until the testing condition returns ‘false’. The condition is checked before the execution of loop statements. "/>
+
+            <TextView
+                android:id="@+id/forUpdateTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="3. Increment/Decrement Condition:"/>
+
+            <TextView
+                android:id="@+id/forUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="Updates the declared variable for the next iteration."/>
+
+            <TextView
+                android:id="@+id/forStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="4. Statement(s):"/>
+
+            <TextView
+                android:id="@+id/forStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="Once the condition returns a Boolean value of true, the statement in the loop body is executed. "/>
 
             <TextView
                 android:id="@+id/whileLoop"
@@ -122,20 +195,59 @@
                 android:id="@+id/whileLoopDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="The loop allows the code to be executed based on a testing condition which once again, should return a Boolean value. It can also be thought as a repeating ‘if’ statement! " />
-
-            <ImageView
-                android:id="@+id/whileSyntax"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/whilesyntax" />
+                android:text="@string/whileLoopIntro"/>
 
             <TextView
-                android:id="@+id/whileLoopComponents"
+                android:id="@+id/whileSyntax"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:background="@drawable/border"
+                android:layout_gravity="center_horizontal"
+                android:text="while (testing condition) {
+                \nstatement(s);
+                \n}"/>
+
+            <TextView
+                android:id="@+id/whileComponentIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12sp"
-                android:text="@string/whileloopcomponents"/>
+                android:layout_marginTop="4sp"
+                android:text="@string/componentIntro"
+                />
+
+            <TextView
+                android:id="@+id/whileTestingTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="1. Testing Condition:"/>
+
+            <TextView
+                android:id="@+id/whileTesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The condition is checked before execution of loop statements."/>
+
+            <TextView
+                android:id="@+id/whileStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="2. Statement(s):"/>
+
+            <TextView
+                android:id="@+id/whileStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The body of the loop is executed when the boolean condition returns true. The statements should contain an updated value for the variable, usually an increment/decrement for the following iteration.  "/>
 
             <TextView
                 android:id="@+id/doWhileLoop"
@@ -151,30 +263,161 @@
                 android:id="@+id/doWhileLoopDesc"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="A do-while loop is similar to a while loop, however the testing condition is checked after execution of the statement. There is no checking of the condition during the first iteration."
+                android:text="A do-while loop is similar to a while loop, however the testing condition is checked after execution. It is important to remember the do-while loop executes the statement at least once before any condition is checked!"
                 />
 
-            <ImageView
+            <TextView
                 android:id="@+id/doWhileSyntax"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/dowhilesyntax" />
+                android:padding="8sp"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:background="@drawable/border"
+                android:layout_gravity="center_horizontal"
+                android:text="do {
+                \nstatement(s);
+                \n} while (testing condition); "/>
 
             <TextView
-                android:id="@+id/doWhileLoopComponents"
+                android:id="@+id/doWhileComponentIntro"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="12sp"
-                android:text="@string/dowhileloopcomponents"/>
+                android:layout_marginTop="4sp"
+                android:text="@string/componentIntro"
+                />
 
             <TextView
-                android:id="@+id/endDoWhile"
+                android:id="@+id/doWhileStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginTop="8sp"
+                android:layout_marginLeft="16sp"
+                android:text="1. Statement(s):"/>
+
+            <TextView
+                android:id="@+id/doWhileStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The loop begins with an execution of the statement. Once again, this should include an updated value for the variable of an increment/decrement for the following iteration."/>
+
+            <TextView
+                android:id="@+id/doWhileTestingTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8sp"
-                android:text="It is important to remember the do-while loop executes the statement at least once before any condition is checked!"/>
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="2. Testing Condition:"/>
+
+            <TextView
+                android:id="@+id/doWhileTesting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The condition is checked after execution of loop statements. If it returns ‘true’, the next iteration starts."/>
+
+
+            <TextView
+                android:id="@+id/controlStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:text="Control Statements"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There are two main control statements used in loops to deviate the execution from its normal sequence:
+                "/>
+
+            <TextView
+                android:id="@+id/breakStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="1. Break Statement:"/>
+
+            <TextView
+                android:id="@+id/breakStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="Terminates the loop statement, moving its sequence outside of the loop and to the statement immediately following the loop."
+                />
+
+            <TextView
+                android:id="@+id/continueStatementTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="16sp"
+                android:text="2. Continue Statement:"/>
+
+            <TextView
+                android:id="@+id/continueStatement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16sp"
+                android:text="The loop skips the remainder of the body and retests the condition to continue the loop."
+                />
+
+            <TextView
+                android:id="@+id/infiniteLoop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:fontFamily="monospace"
+                android:text="Infinite Loop Issue"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/infiniteDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The most common pitfall regarding loops is the possibility of a never-ending loop! This usually indicates that there is an issue with the testing condition or no variable update is included in the loop, making it remain the same value which will continue to satisfy the testing condition.
+                \nFor example, if we take a look at:" />
+
+            <TextView
+                android:id="@+id/infiniteExample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:layout_marginLeft="16sp"
+                android:fontFamily="monospace"
+                android:text="int x = 3;
+do {
+System.out.println(“Hello!”);
+} while (x > 0);"/>
+
+            <TextView
+                android:id="@+id/infiniteExplanation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8sp"
+                android:text="The loop will run infinitely as there is no updated value for x as the statements are executed! For this loop, a decrement update of x-- should be added after the System.out.println(“Hello!”); so the loop will eventually terminate."/>
+
+            <TextView
+                android:id="@+id/references"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="8sp"
+                android:layout_marginTop="8sp"
+                android:text="REFERENCE: Mahrsee, R. n.d. Loops in Java [online], GeeksforGeeks. Available at https://www.geeksforgeeks.org/loops-in-java/"
+                />
+
 
         </LinearLayout>
+
     </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
