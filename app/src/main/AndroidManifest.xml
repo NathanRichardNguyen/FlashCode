@@ -70,8 +70,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".GoogleDriveActivity"> </activity>
+        <activity android:name=".GoogleDriveActivity"></activity>
         <activity android:name=".MultipleChoiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -80,7 +79,18 @@
             </intent-filter>
         </activity>
 
+        <activity android:name=".FlashcardActivitySecond">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FlashcardQuestionLibrary"
+            android:label="@string/title_activity_flashcard_question_library"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>

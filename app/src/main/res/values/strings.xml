@@ -45,6 +45,7 @@
         \nhttps://bit.ly/2QWkR6m
     </string>
     <string name="title_activity_multiple_choice">MultipleChoiceActivity</string>
+    <string name="title_activity_flashcard_question_library">FlashcardQuestionLibrary</string>
 
 
 </resources>
