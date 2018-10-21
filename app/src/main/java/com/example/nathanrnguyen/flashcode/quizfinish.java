@@ -19,7 +19,7 @@ public class quizfinish extends AppCompatActivity {
         ImageView homebutton = findViewById(R.id.homeButton);
         ImageView backbutton = findViewById(R.id.backButton);
 
-        quizfinishtext.setText("Congratulations you are now a loops expert! /n/ (hopefully)");
+        quizfinishtext.setText("Congratulations you are now a loops expert! (hopefully)");
 
         homebutton.setOnClickListener(new View.OnClickListener() {
             @Override
