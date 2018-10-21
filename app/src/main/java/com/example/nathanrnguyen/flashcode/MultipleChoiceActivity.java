@@ -1,7 +1,9 @@
 package com.example.nathanrnguyen.flashcode;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
@@ -24,6 +26,9 @@ public class MultipleChoiceActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiple_choice);
+        final MediaPlayer correctsoundmp = MediaPlayer.create(this, R.raw.correctsound);
+        final MediaPlayer incorrectsoundmp = MediaPlayer.create(this, R.raw.incorrectsound);
+
 
         // Home and Back Button
         ImageView backButton = findViewById(R.id.backButton);
@@ -66,10 +71,13 @@ public class MultipleChoiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (textA.getText() == answer) {
                     updateQuestion();
+                    correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+
 
                 } else {
                     Toast.makeText(MultipleChoiceActivity.this, "Please try again!", Toast.LENGTH_SHORT).show();
+                    incorrectsoundmp.start();
 
                 }
             }
@@ -84,10 +92,13 @@ public class MultipleChoiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (textB.getText() == answer) {
                     updateQuestion();
+                    correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+
 
                 } else {
                     Toast.makeText(MultipleChoiceActivity.this, "Please try again!", Toast.LENGTH_SHORT).show();
+                    incorrectsoundmp.start();
 
                 }
             }
@@ -102,11 +113,13 @@ public class MultipleChoiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (textC.getText() == answer) {
                     updateQuestion();
+                    correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+
 
                 } else {
                     Toast.makeText(MultipleChoiceActivity.this, "Please try again!", Toast.LENGTH_SHORT).show();
-
+                    incorrectsoundmp.start();
                 }
             }
 
@@ -121,6 +134,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
                 if (textD.getText() == answer) {
                     updateQuestion();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    correctsoundmp.start();
 
                 } else {
                     Toast.makeText(MultipleChoiceActivity.this, "Please try again!", Toast.LENGTH_SHORT).show();
