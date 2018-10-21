@@ -78,7 +78,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".FlashcardActivitySecond">
+        <activity android:name=".FlashcardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

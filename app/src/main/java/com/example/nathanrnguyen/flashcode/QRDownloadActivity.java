@@ -23,7 +23,7 @@ public class QRDownloadActivity extends AppCompatActivity {
         scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(QRDownloadActivity.this, FlashcardActivitySecond.class));
+                startActivity(new Intent(QRDownloadActivity.this, FlashcardActivity.class));
             }
         });
 

@@ -146,24 +146,29 @@ public class MultipleChoiceActivity extends AppCompatActivity {
 
         });
     }
-        // Updates the question and answers in the display with relevant question data from the questions and possibleChoices
-        // array using the getQuestion and getChoice_ method in the Question Library class.
-        // Retrieves the correct answer from the correctAnswer array using the getCorrectAnswer method in the QuestionLibrary class.
-        // Iterates the method by one to get the next question.
-        private void updateQuestion () {
-        if (questionLibrary.getQuestion(questionNumber) != null){
-            question.setText(questionLibrary.getQuestion(questionNumber));
-            textA.setText(questionLibrary.getChoiceA(questionNumber));
-            textB.setText(questionLibrary.getChoiceB(questionNumber));
-            textC.setText(questionLibrary.getChoiceC(questionNumber));
-            textD.setText(questionLibrary.getChoiceD(questionNumber));
 
-            answer = questionLibrary.getCorrectAnswer(questionNumber);
-            questionNumber++;
-        } else {
+    // Updates the question and answers in the display with relevant question data from the questions and possibleChoices
+    // array using the getQuestion and getChoice_ method in the Question Library class.
+    // Retrieves the correct answer from the correctAnswer array using the getCorrectAnswer method in the QuestionLibrary class.
+    // Iterates the method by one to get the next question.
+    private void updateQuestion() {
+
+
+        question.setText(questionLibrary.getQuestion(questionNumber));
+        textA.setText(questionLibrary.getChoiceA(questionNumber));
+        textB.setText(questionLibrary.getChoiceB(questionNumber));
+        textC.setText(questionLibrary.getChoiceC(questionNumber));
+        textD.setText(questionLibrary.getChoiceD(questionNumber));
+
+        answer = questionLibrary.getCorrectAnswer(questionNumber);
+        questionNumber++;
+
+        if (questionNumber == 5) {
             startActivity(new Intent(MultipleChoiceActivity.this, quizfinish.class));
-
         }
 
-    }}
+    }
+}
+
+
 
