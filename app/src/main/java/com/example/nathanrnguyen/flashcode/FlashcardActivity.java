@@ -29,6 +29,8 @@ public class FlashcardActivity extends AppCompatActivity {
     CardView questioncard;
     Button scanbtn;
     Button nextButton;
+    ImageView homeButton;
+    ImageView backButton;
 
     private int questionNumber = 0;
     private FlashcardQuestionLibrary flashcardQuestionLibrary = new FlashcardQuestionLibrary();
@@ -36,12 +38,14 @@ public class FlashcardActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_flashcardsecond);
+        setContentView(R.layout.activity_flashcard);
 
         questiontext = findViewById(R.id.questiontext);
         answertext = findViewById(R.id.answertext);
         scanbtn = findViewById(R.id.scbutton);
         nextButton = findViewById(R.id.nextButton);
+        homeButton = findViewById(R.id.homeButton);
+        backButton = findViewById(R.id.backButton);
 
         updateQuestion();
 
@@ -65,6 +69,21 @@ public class FlashcardActivity extends AppCompatActivity {
                 answertext.setText("Scan QR Code for answer");
             }
         });
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FlashcardActivity.this, QRDownloadActivity.class));
+            }
+        });
+
+        homeButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(FlashcardActivity.this, MenuActivity.class));
+            }
+        });
+
 
     }
 

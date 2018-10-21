@@ -145,6 +145,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
             }
 
         });
+
     }
 
     // Updates the question and answers in the display with relevant question data from the questions and possibleChoices

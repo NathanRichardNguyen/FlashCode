@@ -16,7 +16,6 @@ public class quizfinish extends AppCompatActivity {
 
         TextView quizfinishtext = findViewById(R.id.quizfinishtext);
 
-
         ImageView homebutton = findViewById(R.id.homeButton);
         ImageView backbutton = findViewById(R.id.backButton);
 
