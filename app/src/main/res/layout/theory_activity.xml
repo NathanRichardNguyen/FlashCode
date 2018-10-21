@@ -406,27 +406,40 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8sp"
                 android:text="The loop will run infinitely as there is no updated value for x as the statements are executed! For this loop, a decrement update of x-- should be added after the System.out.println(“Hello!”); so the loop will eventually terminate."/>
-            <android.support.v7.widget.LinearLayoutCompat
+
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
-                >
-                <TextView
-                    android:id="@+id/youtubetext"
+                android:layout_marginTop="8sp">
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Still confused? Click on the youtube icon for a video explaining loops!"/>
+                    android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:text="Still confused?"/>
+
+                <TextView
+                    android:layout_width="335sp"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    android:text="Check out a YouTube video explaining loops!"/>
+
+                </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/youtubeicon"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    app:layout_constraintEnd_toStartOf="@+id/youtubetext"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/youtube" />
-            </android.support.v7.widget.LinearLayoutCompat>
+                    android:id="@+id/youtubeButton"
+                    android:layout_width="30sp"
+                    android:layout_height="30sp"
+                    android:src="@drawable/youtube"/>
+
+            </LinearLayout>
+
             <TextView
                 android:id="@+id/references"
                 android:layout_width="match_parent"
