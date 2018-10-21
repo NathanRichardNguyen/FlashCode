@@ -10,7 +10,7 @@ public class TheoryActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.theory_activity);
+        setContentView(R.layout.activity_theory);
 
         ImageView backButton = findViewById(R.id.backButton);
         ImageView homeButton = findViewById(R.id.homeButton);

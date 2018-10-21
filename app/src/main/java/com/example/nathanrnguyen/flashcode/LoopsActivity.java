@@ -11,7 +11,7 @@ public class LoopsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.loops_activity);
+        setContentView(R.layout.activity_loops);
 
         ImageView backButton = findViewById(R.id.backButton);
         ImageView homeButton = findViewById(R.id.homeButton);

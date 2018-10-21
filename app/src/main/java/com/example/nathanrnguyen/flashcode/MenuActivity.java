@@ -13,7 +13,7 @@ public class MenuActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.cardmenu);
+        setContentView(R.layout.activity_menu);
 
         ImageView backButton = findViewById(R.id.backButton);
         ImageView homeButton = findViewById(R.id.homeButton);

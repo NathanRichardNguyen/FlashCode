@@ -19,7 +19,7 @@ import com.google.android.gms.vision.barcode.Barcode;
 public class FlashcardActivitySecond extends AppCompatActivity {
     public static final int REQUEST_CODE = 100;
     public static final int PERMISSION_REQUEST = 200;
-    private static final String TAG = "FlashcardActivity";
+    private static final String TAG = "FlashcardActivitySecond";
 
     ImageView questionicon;
     ImageView answericon;
