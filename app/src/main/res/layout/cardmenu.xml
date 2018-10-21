@@ -25,7 +25,6 @@
                 android:id="@+id/backButton"
                 android:layout_width="36sp"
                 android:layout_height="36sp"
-                android:layout_marginRight="320sp"
                 android:padding="2sp"
                 android:src="@drawable/back" />
 
@@ -35,6 +34,7 @@
                 android:layout_height="36sp"
                 android:maxWidth="42sp"
                 android:maxHeight="42sp"
+                android:layout_gravity="right"
                 android:src="@drawable/home" />
 
         </GridLayout>

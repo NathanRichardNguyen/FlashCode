@@ -11,34 +11,34 @@
         android:background="@android:color/white"
         android:orientation="vertical">
 
-    <GridLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8sp"
-        android:layout_marginLeft="8sp"
-        android:layout_marginRight="8sp"
-        android:columnCount="2"
-        android:columnOrderPreserved="false"
-        android:alignmentMode="alignMargins"
-        android:rowCount="1">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:layout_marginLeft="8sp"
+            android:layout_marginRight="8sp"
+            android:columnCount="2"
+            android:columnOrderPreserved="false"
+            android:alignmentMode="alignMargins"
+            android:rowCount="1">
 
-        <ImageView
-            android:id="@+id/backButton"
-            android:layout_width="36sp"
-            android:layout_height="36sp"
-            android:layout_marginRight="320sp"
-            android:padding="2sp"
-            android:src="@drawable/back" />
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:padding="2sp"
+                android:src="@drawable/back" />
 
-        <ImageView
-            android:id="@+id/homeButton"
-            android:layout_width="36sp"
-            android:layout_height="36sp"
-            android:maxWidth="42sp"
-            android:maxHeight="42sp"
-            android:src="@drawable/home" />
+            <ImageView
+                android:id="@+id/homeButton"
+                android:layout_width="36sp"
+                android:layout_height="36sp"
+                android:maxWidth="42sp"
+                android:maxHeight="42sp"
+                android:layout_gravity="right"
+                android:src="@drawable/home" />
 
-    </GridLayout>
+        </GridLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
