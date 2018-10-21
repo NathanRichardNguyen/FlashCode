@@ -151,6 +151,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
         // Retrieves the correct answer from the correctAnswer array using the getCorrectAnswer method in the QuestionLibrary class.
         // Iterates the method by one to get the next question.
         private void updateQuestion () {
+        if (questionLibrary.getQuestion(questionNumber) != null){
             question.setText(questionLibrary.getQuestion(questionNumber));
             textA.setText(questionLibrary.getChoiceA(questionNumber));
             textB.setText(questionLibrary.getChoiceB(questionNumber));
@@ -159,7 +160,10 @@ public class MultipleChoiceActivity extends AppCompatActivity {
 
             answer = questionLibrary.getCorrectAnswer(questionNumber);
             questionNumber++;
+        } else {
+            startActivity(new Intent(MultipleChoiceActivity.this, quizfinish.class));
+
         }
 
-    }
+    }}
 
