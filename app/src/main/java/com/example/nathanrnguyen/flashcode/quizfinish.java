@@ -27,6 +27,7 @@ public class quizfinish extends AppCompatActivity {
                 startActivity(new Intent(quizfinish.this, MenuActivity.class));
             }
         });
+
         backbutton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
