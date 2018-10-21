@@ -29,6 +29,13 @@ public class TheoryActivity extends AppCompatActivity {
                 startActivity(new Intent(TheoryActivity.this, MenuActivity.class));
             }
         });
+
+        youtubeicon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(TheoryActivity.this, YoutubeActivity.class));
+            }
+        });
     }
 }
 

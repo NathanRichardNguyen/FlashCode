@@ -133,11 +133,13 @@ public class MultipleChoiceActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if (textD.getText() == answer) {
                     updateQuestion();
-                    Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
                     correctsoundmp.start();
+                    Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+
 
                 } else {
                     Toast.makeText(MultipleChoiceActivity.this, "Please try again!", Toast.LENGTH_SHORT).show();
+                    incorrectsoundmp.start();
 
                 }
             }
