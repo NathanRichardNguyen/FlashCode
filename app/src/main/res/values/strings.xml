@@ -46,6 +46,7 @@
     </string>
     <string name="title_activity_multiple_choice">MultipleChoiceActivity</string>
     <string name="title_activity_flashcard_question_library">FlashcardQuestionLibrary</string>
+    <string name="title_activity_maps">Map</string>
 
 
 </resources>
