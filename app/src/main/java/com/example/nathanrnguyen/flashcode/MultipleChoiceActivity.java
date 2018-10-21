@@ -154,20 +154,20 @@ public class MultipleChoiceActivity extends AppCompatActivity {
     // Iterates the method by one to get the next question.
     private void updateQuestion() {
 
-
-        question.setText(questionLibrary.getQuestion(questionNumber));
-        textA.setText(questionLibrary.getChoiceA(questionNumber));
-        textB.setText(questionLibrary.getChoiceB(questionNumber));
-        textC.setText(questionLibrary.getChoiceC(questionNumber));
-        textD.setText(questionLibrary.getChoiceD(questionNumber));
-
-        answer = questionLibrary.getCorrectAnswer(questionNumber);
-        questionNumber++;
-
-        if (questionNumber == 5) {
+        if (questionNumber >= 5) {
             startActivity(new Intent(MultipleChoiceActivity.this, quizfinish.class));
-        }
+        } else {
+            question.setText(questionLibrary.getQuestion(questionNumber));
+            textA.setText(questionLibrary.getChoiceA(questionNumber));
+            textB.setText(questionLibrary.getChoiceB(questionNumber));
+            textC.setText(questionLibrary.getChoiceC(questionNumber));
+            textD.setText(questionLibrary.getChoiceD(questionNumber));
 
+            answer = questionLibrary.getCorrectAnswer(questionNumber);
+            questionNumber++;
+
+
+        }
     }
 }
 
