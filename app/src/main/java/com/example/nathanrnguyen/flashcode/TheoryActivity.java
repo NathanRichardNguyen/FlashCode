@@ -14,6 +14,7 @@ public class TheoryActivity extends AppCompatActivity {
 
         ImageView backButton = findViewById(R.id.backButton);
         ImageView homeButton = findViewById(R.id.homeButton);
+        ImageView youtubeicon = findViewById(R.id.youtubeicon);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
