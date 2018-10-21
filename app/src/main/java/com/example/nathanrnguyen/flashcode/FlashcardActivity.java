@@ -103,8 +103,14 @@ public class FlashcardActivity extends AppCompatActivity {
     }
 
     private void updateQuestion () {
-        questiontext.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
-        questionNumber++;
+
+        if(questionNumber >= 6) {
+            startActivity(new Intent(FlashcardActivity.this, quizfinish.class));
+        }else {
+            questiontext.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
+            questionNumber++;
+        }
+
     }
 
 
