@@ -120,7 +120,9 @@
                     <ImageView
                         android:layout_width="100sp"
                         android:layout_height="100sp"
+                        android:layout_gravity="center_vertical"
                         android:src="@drawable/answer" />
+
                     <TextView
                         android:id="@+id/answertext"
                         android:layout_width="wrap_content"
@@ -128,6 +130,7 @@
                         android:layout_marginLeft="15sp"
                         android:layout_marginRight="5sp"
                         android:layout_marginTop="0sp"
+                        android:layout_gravity="center_vertical"
                         android:text="Scan QR Code for answer"
                         android:textColor="#6f6f6f"
                         android:textSize="20sp" />

@@ -21,6 +21,8 @@ public class QuestionLibrary {
                     "        for (int i = 0; i != 0; i++) {\n" +
                     "        System.out.println(“Hello!”);\n" +
                     "        } ",
+
+            "Which element of a loop must return a ‘true’ Boolean value in order for the statements to be executed?"
     };
 
     private String options [][] = {
@@ -28,6 +30,7 @@ public class QuestionLibrary {
         {"AAA", "AA", "A\nA", "A\nA\nA"},
         {"5 times", "4 times", "6 times", "There is a compile error"},
         {"It prints nothing", "There is a compile error", "Prints Hello! infinitely", "Prints Hello! once"},
+            {"Testing Condition", "Initialization Condition", "Increment Update", "Decrement Update"}
     };
 
 
@@ -36,6 +39,7 @@ public class QuestionLibrary {
             "A\nA\nA",
             "4 times",
             "It prints nothing",
+            "Testing Condition"
     };
 
     public String getQuestion(int a) {

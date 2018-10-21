@@ -62,6 +62,7 @@ public class FlashcardActivitySecond extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 updateQuestion();
+                answertext.setText("Scan QR Code for answer");
             }
         });
 
