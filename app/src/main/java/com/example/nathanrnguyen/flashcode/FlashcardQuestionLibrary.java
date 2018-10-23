@@ -20,6 +20,7 @@ public class FlashcardQuestionLibrary {
 
 };
 
+    // Returns the question
     public String getQuestion(int a) {
         String question = questions[a];
         return question;

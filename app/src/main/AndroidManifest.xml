@@ -3,7 +3,6 @@
     package="com.example.nathanrnguyen.flashcode">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.CAMERA " />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!--
@@ -20,6 +19,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -27,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".MenuActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -34,6 +35,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".LoopsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -41,6 +43,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".SoonActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -48,6 +51,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".TheoryActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -55,6 +59,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".TestActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -62,7 +67,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".ScanActivity" />
+
         <activity android:name=".QRDownloadActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -70,7 +77,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".GoogleDriveActivity" />
+
         <activity android:name=".MultipleChoiceActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -78,6 +87,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity android:name=".FlashcardActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -85,6 +95,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".FlashcardQuestionLibrary"
             android:label="@string/title_activity_flashcard_question_library"
@@ -108,7 +119,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".quizfinish">
+
+        <activity
+            android:name=".QuizCompletion">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
 

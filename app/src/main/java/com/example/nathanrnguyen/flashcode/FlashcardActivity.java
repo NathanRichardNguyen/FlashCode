@@ -49,6 +49,7 @@ public class FlashcardActivity extends AppCompatActivity {
 
         updateQuestion();
 
+        // Requests permission of use of camera component.
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             Log.d(TAG, "onCreate: Camera permissions not set");
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST);
@@ -87,7 +88,8 @@ public class FlashcardActivity extends AppCompatActivity {
 
     }
 
-    //If the camera activity returns a result, this method is run
+    // If the camera activity returns a result, this method is run.
+    // This retrieves the answer associated with the QR code and displays it in the answer field.
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
@@ -102,11 +104,12 @@ public class FlashcardActivity extends AppCompatActivity {
 
     }
 
+    // This method is run to retrieve the next question in the array and display it.
+    // If the question number exceeds the maximum amount of questions in the array, the user is sent to the completion page.
     private void updateQuestion () {
-
         if(questionNumber >= 6) {
-            startActivity(new Intent(FlashcardActivity.this, quizfinish.class));
-        }else {
+            startActivity(new Intent(FlashcardActivity.this, QuizCompletion.class));
+        } else {
             questiontext.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
             questionNumber++;
         }

@@ -42,31 +42,37 @@ public class QuestionLibrary {
             "Testing Condition"
     };
 
+    // Returns question
     public String getQuestion(int a) {
         String question = questions[a];
         return question;
     }
 
+    // Returns option A
     public String getChoiceA(int a) {
         String choiceA = options[a][0];
         return choiceA;
     }
 
+    // Returns option B
     public String getChoiceB(int a) {
         String choiceB = options[a][1];
         return choiceB;
     }
 
+    // Returns option C
     public String getChoiceC(int a) {
         String choiceC = options[a][2];
         return choiceC;
     }
 
+    // Returns option D
     public String getChoiceD(int a) {
         String choiceD = options[a][3];
         return choiceD;
     }
 
+    // Returns correct answer
     public String getCorrectAnswer(int a) {
         String answer = correctAnswer[a];
         return answer;

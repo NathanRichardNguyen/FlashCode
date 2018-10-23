@@ -3,7 +3,6 @@ package com.example.nathanrnguyen.flashcode;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
 import android.view.View;
@@ -62,6 +61,12 @@ public class MultipleChoiceActivity extends AppCompatActivity {
         question = findViewById(R.id.question);
 
         updateQuestion(); // Calls the method updateQuestion()
+
+
+        // If the user selects a choice and it matches the correct answer in the correctAnswer array:
+        // A toast message saying "Correct!" occurs with an correct sound.
+        // If the choice does not match the answer, a toast message saying "Please try again!" and an incorrect sound plays.
+        // The updateQuestion() method is called.
 
         choiceA.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -148,14 +153,14 @@ public class MultipleChoiceActivity extends AppCompatActivity {
 
     }
 
-    // Updates the question and answers in the display with relevant question data from the questions and possibleChoices
-    // array using the getQuestion and getChoice_ method in the Question Library class.
+    // Updates the question and answers in the display with relevant data from the relevant array in QuestionLibrary class.
     // Retrieves the correct answer from the correctAnswer array using the getCorrectAnswer method in the QuestionLibrary class.
-    // Iterates the method by one to get the next question.
+    // Iterates the questionNumber by one to get the next question.
+    // If the question number exceeds the maximum amount of questions in the array, the user is sent to the completion page.
     private void updateQuestion() {
 
         if (questionNumber >= 5) {
-            startActivity(new Intent(MultipleChoiceActivity.this, quizfinish.class));
+            startActivity(new Intent(MultipleChoiceActivity.this, QuizCompletion.class));
         } else {
             question.setText(questionLibrary.getQuestion(questionNumber));
             textA.setText(questionLibrary.getChoiceA(questionNumber));

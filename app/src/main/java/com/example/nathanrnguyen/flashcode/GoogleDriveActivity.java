@@ -22,12 +22,5 @@ public class GoogleDriveActivity extends AppCompatActivity {
         webSettings.setDisplayZoomControls(true);
         webview.loadUrl("https://drive.google.com/open?id=1akC0_BJx2uvd70S21i6wQ4tWpn1mXQH1");
 
-        //Intent i = getIntent();
-        //String url= i.getStringExtra("https://drive.google.com/open?id=1akC0_BJx2uvd70S21i6wQ4tWpn1mXQH1");
-        //webView = (WebView) findViewById(R.id.webview);
-        //webView.getSettings().setJavaScriptEnabled(true);
-        //webView.setWebViewClient(new WebViewClient());
-        //webView.loadUrl(url);
-
     }
 }

@@ -34,11 +34,13 @@ public class ScanActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_scan);
         mcameraView = findViewById(R.id.cameraView);
+
         mcameraView.setZOrderMediaOverlay(true);
         msurfaceHolder = mcameraView.getHolder();
         mbarcodeDetector = new BarcodeDetector.Builder(getApplicationContext())
                 .setBarcodeFormats(Barcode.QR_CODE)
                 .build();
+
         if(!mbarcodeDetector.isOperational()) {
             Toast.makeText(getApplicationContext(), "There was an error setting up the QR Code detector", Toast.LENGTH_LONG).show();
             Log.d(TAG, "Barcode detector has an error");
@@ -50,6 +52,7 @@ public class ScanActivity extends AppCompatActivity {
                 .setAutoFocusEnabled(true)
                 .setRequestedPreviewSize(1920, 1024)
                 .build();
+
         mcameraView.getHolder().addCallback(new SurfaceHolder.Callback() {
             @Override
             public void surfaceCreated(SurfaceHolder holder) {
