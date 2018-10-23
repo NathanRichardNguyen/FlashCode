@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    // ALL ICONS USED THROUGHOUT THE APPLICATION ARE CREDITED TO FLATICON
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -106,7 +106,7 @@
                             android:layout_marginLeft="15sp"
                             android:layout_marginRight="5sp"
                             android:layout_marginTop="0sp"
-                            android:text="Take the test of knowledge by filling in the blanks, writing the output and more!"
+                            android:text="Take our multiple choice quiz, testing your basic understanding of loops to you figuring out the output."
                             android:textColor="#6f6f6f"
                             android:textSize="12sp" />
 
@@ -160,7 +160,7 @@
                             android:layout_marginLeft="15sp"
                             android:layout_marginRight="5sp"
                             android:layout_marginTop="0sp"
-                            android:text="Download our question flash cards and find the answer by scanning the QR code!"
+                            android:text="Download and print our question flash cards then find out the answer by scanning the QR code!"
                             android:textColor="#6f6f6f"
                             android:textSize="12sp" />
 
