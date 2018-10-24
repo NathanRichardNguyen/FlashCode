@@ -1,6 +1,8 @@
 package com.example.nathanrnguyen.flashcode;
 
-public class FlashcardQuestionLibrary {
+import android.support.v7.app.AppCompatActivity;
+
+public class FlashcardQuestionLibrary extends AppCompatActivity {
 
     private String questions [] = {
             "What is the purpose of updating the variable value in a loop statement?",

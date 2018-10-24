@@ -361,7 +361,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16sp"
-                android:text="The loop skips the remainder of the body and retests the condition to continue the loop." />
+                android:text="The loop skips the remainder of the loop's body of the current iteration and skips to the next iteration, retesting the condition to continue the loop." />
 
             <TextView
                 android:id="@+id/infiniteLoop"

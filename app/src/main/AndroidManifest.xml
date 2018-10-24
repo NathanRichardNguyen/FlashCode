@@ -91,9 +91,9 @@
         </activity>
 
         <activity
-            android:name=".FlashcardQuestionLibrary"
-            android:label="@string/title_activity_flashcard_question_library"
-            android:theme="@style/AppTheme" />
+            android:name=".FlashcardQuestionLibrary">
+        </activity>
+
 
         <activity android:name=".YoutubeActivity">
             <intent-filter>

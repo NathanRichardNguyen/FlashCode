@@ -49,7 +49,7 @@ public class MenuActivity extends AppCompatActivity {
         });
 
 
-        // other topics
+        // Other topics
 
         arrayCard.setOnClickListener(new View.OnClickListener() {
             @Override

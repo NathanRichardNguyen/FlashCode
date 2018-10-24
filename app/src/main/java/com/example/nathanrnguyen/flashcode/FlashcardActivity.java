@@ -21,13 +21,11 @@ public class FlashcardActivity extends AppCompatActivity {
     public static final int PERMISSION_REQUEST = 200;
     private static final String TAG = "FlashcardActivity";
 
-    ImageView questionicon;
-    ImageView answericon;
-    TextView questiontext;
-    TextView answertext;
-    CardView answercard;
-    CardView questioncard;
-    Button scanbtn;
+    TextView questionText;
+    TextView answerText;
+    CardView answerCard;
+    CardView questionCard;
+    Button scanButton;
     Button nextButton;
     ImageView homeButton;
     ImageView backButton;
@@ -40,9 +38,9 @@ public class FlashcardActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_flashcard);
 
-        questiontext = findViewById(R.id.questiontext);
-        answertext = findViewById(R.id.answertext);
-        scanbtn = findViewById(R.id.scbutton);
+        questionText = findViewById(R.id.questiontext);
+        answerText = findViewById(R.id.answertext);
+        scanButton = findViewById(R.id.scbutton);
         nextButton = findViewById(R.id.nextButton);
         homeButton = findViewById(R.id.homeButton);
         backButton = findViewById(R.id.backButton);
@@ -55,7 +53,7 @@ public class FlashcardActivity extends AppCompatActivity {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.CAMERA}, PERMISSION_REQUEST);
         }
 
-        scanbtn.setOnClickListener(new View.OnClickListener() {
+        scanButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ScanActivity.class);
@@ -67,7 +65,7 @@ public class FlashcardActivity extends AppCompatActivity {
             @Override
             public void onClick (View v) {
                 updateQuestion();
-                answertext.setText("Scan QR Code for answer");
+                answerText.setText("Scan QR Code for answer");
             }
         });
 
@@ -94,10 +92,10 @@ public class FlashcardActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (requestCode == REQUEST_CODE && resultCode == RESULT_OK) {
             final Barcode qrcode = data.getParcelableExtra("barcoderesult");
-            answertext.post(new Runnable() {
+            answerText.post(new Runnable() {
                 @Override
                 public void run() {
-                    answertext.setText(qrcode.displayValue);
+                    answerText.setText(qrcode.displayValue);
                 }
             });
         }
@@ -110,7 +108,7 @@ public class FlashcardActivity extends AppCompatActivity {
         if(questionNumber >= 6) {
             startActivity(new Intent(FlashcardActivity.this, QuizCompletion.class));
         } else {
-            questiontext.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
+            questionText.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
             questionNumber++;
         }
 

@@ -14,7 +14,7 @@ public class TheoryActivity extends AppCompatActivity {
 
         ImageView backButton = findViewById(R.id.backButton);
         ImageView homeButton = findViewById(R.id.homeButton);
-        ImageView youtubeicon = findViewById(R.id.youtubeButton);
+        ImageView youtubeIcon = findViewById(R.id.youtubeButton);
 
         backButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,7 +30,7 @@ public class TheoryActivity extends AppCompatActivity {
             }
         });
 
-        youtubeicon.setOnClickListener(new View.OnClickListener() {
+        youtubeIcon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(TheoryActivity.this, YoutubeActivity.class));
