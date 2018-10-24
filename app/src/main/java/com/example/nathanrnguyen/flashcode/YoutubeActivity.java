@@ -32,7 +32,7 @@ implements YouTubePlayer.OnInitializedListener {
     @Override
     public void onInitializationSuccess(YouTubePlayer.Provider provider, YouTubePlayer youTubePlayer, boolean wasRestored) {
         Log.d(TAG, "onInitializationSuccess: provider is " + provider.getClass().toString());
-        Toast.makeText(this, "Initialized YouTube Player successfully", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "YouTube Player initialised successfully: Loops Video", Toast.LENGTH_LONG).show();
         if(!wasRestored) {
             youTubePlayer.cueVideo(YOUTUBE_VIDEO_ID);
         }
