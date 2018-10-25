@@ -36,8 +36,7 @@ public class QuestionLibrary {
                     "        int i = 0;\n" +
                     "        while (i < 2) {\n" +
                     "        System.out.println(“Hi!”);\n" +
-                    "        i++; \n" +
-                    "        }\n ",
+                    "        i++; } \n" +
                     "        System.out.println(“Bye!”);",
     };
 

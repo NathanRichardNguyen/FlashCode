@@ -165,7 +165,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
     // If the question number exceeds the maximum amount of questions in the array, the user is sent to the completion page.
     private void updateQuestion() {
 
-        if (questionNumber == (questionLibrary.getQuestions().length)-1) {
+        if (questionNumber == (questionLibrary.getQuestions().length)) {
             startActivity(new Intent(MultipleChoiceActivity.this, QuizCompletion.class));
         } else {
             question.setText(questionLibrary.getQuestion(questionNumber));
