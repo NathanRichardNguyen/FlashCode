@@ -4,6 +4,10 @@ import android.support.v7.app.AppCompatActivity;
 
 public class FlashcardQuestionLibrary extends AppCompatActivity {
 
+    public String[] getQuestions() {
+        return questions;
+    }
+
     private String questions [] = {
             "What is the purpose of updating the variable value in a loop statement?",
 

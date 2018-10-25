@@ -105,7 +105,7 @@ public class FlashcardActivity extends AppCompatActivity {
     // This method is run to retrieve the next question in the array and display it.
     // If the question number exceeds the maximum amount of questions in the array, the user is sent to the completion page.
     private void updateQuestion () {
-        if(questionNumber >= 6) {
+        if(questionNumber == (flashcardQuestionLibrary.getQuestions().length) -1) {
             startActivity(new Intent(FlashcardActivity.this, QuizCompletion.class));
         } else {
             questionText.setText(flashcardQuestionLibrary.getQuestion(questionNumber));
@@ -113,6 +113,8 @@ public class FlashcardActivity extends AppCompatActivity {
         }
 
     }
+
+
 
 
 }

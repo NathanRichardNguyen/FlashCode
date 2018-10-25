@@ -2,6 +2,8 @@ package com.example.nathanrnguyen.flashcode;
 
 public class QuestionLibrary {
 
+
+
     private String questions [] = {
             //Q1
             "Which loop has their testing condition checked before the initial execution?",
@@ -92,6 +94,12 @@ public class QuestionLibrary {
         String answer = correctAnswer[a];
         return answer;
     }
+    public String[] getQuestions() {
+        return questions;
+    }
+
+
+
 
 
 
