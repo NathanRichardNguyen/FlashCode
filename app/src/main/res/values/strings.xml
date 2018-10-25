@@ -9,35 +9,9 @@
         The components of the loop include:
     </string>
 
-    <string name="forloopcomponents">
-        •	INITIALIZATION CONDITION:
-        \nThe variable is initialized here. A previously declared variable can be used or a new variable is declared, local to the loop.
-        \n\n•	TESTING CONDITION:
-        \nThe testing condition must return a Boolean value. The loop is executed until the testing condition returns ‘false’. The condition is checked before the execution of loop statements.
-        \n\n•	INCREMENT/DECREMENT:
-        \nUpdates the declared variable for the next iteration.
-        \n\n•	STATEMENT(S):
-        \nOnce the condition returns a Boolean value of true, the statement in the loop body is executed.
-    </string>
-
     <string name="whileLoopIntro">
         Repeats the execution statements based on a testing condition which once again, should return a Boolean value of true. It can also be thought as a repeating ‘if’ statement!
         \n\nThe while loop is considered an event-controlled condition and should be used when the number of iterations is not known, relying the amount of repetitions on the satisfaction of the condition.
-    </string>
-
-
-    <string name="whileloopcomponents">
-    •	TESTING CONDITION:
-        \nThe condition is checked before execution of loop statements.
-        \n\n•	STATEMENT(S):
-        \nThe body of the loop is executed when the boolean condition returns true. The statements should contain an updated value for the variable, usually an increment/decrement for the following iteration.
-    </string>
-
-    <string name="dowhileloopcomponents">
-    •	STATEMENT(S):
-        \nThe loop begins with an execution of the statement. Once again, this should include an updated value for the variable of an increment/decrement for the following iteration.
-        \n\n•	TESTING CONDITION:
-        \nThe condition is checked after execution of loop statements. If it returns ‘true’, the next iteration starts.
     </string>
 
     <string name="download">

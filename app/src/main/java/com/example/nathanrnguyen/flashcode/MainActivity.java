@@ -8,7 +8,8 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
-    // ALL ICONS USED THROUGHOUT THE APPLICATION ARE CREDITED TO FLATICON
+    // All icons used throughout the application are credited to FlatIcon
+    // All other graphics were created on Canva
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
