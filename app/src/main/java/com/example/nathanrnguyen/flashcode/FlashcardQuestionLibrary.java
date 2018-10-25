@@ -1,13 +1,16 @@
 package com.example.nathanrnguyen.flashcode;
 
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 
 public class FlashcardQuestionLibrary extends AppCompatActivity {
+    private static final String TAG = "FlashcardQuestionLibrary";
 
     public String[] getQuestions() {
         return questions;
     }
 
+    //Questions are stored in an array, which is queried for each multiple choice question
     private String questions [] = {
             "What is the purpose of updating the variable value in a loop statement?",
 
@@ -29,6 +32,8 @@ public class FlashcardQuestionLibrary extends AppCompatActivity {
     // Returns the question
     public String getQuestion(int a) {
         String question = questions[a];
+        Log.d(TAG, "getQuestion: Successfully returned question ");
         return question;
+
     }
 }

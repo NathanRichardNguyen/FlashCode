@@ -5,12 +5,14 @@ import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 public class MultipleChoiceActivity extends AppCompatActivity {
+    private static final String TAG = "MultipleChoiceActivity";
 
     private QuestionLibrary questionLibrary = new QuestionLibrary();
     private TextView question;
@@ -78,6 +80,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
                     updateQuestion();
                     correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "onClick: Correct answer selected");
 
 
                 } else {
@@ -99,6 +102,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
                     updateQuestion();
                     correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "onClick: Correct answer selected");
 
 
                 } else {
@@ -120,6 +124,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
                     updateQuestion();
                     correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "onClick: Correct answer selected");
 
 
                 } else {
@@ -140,6 +145,7 @@ public class MultipleChoiceActivity extends AppCompatActivity {
                     updateQuestion();
                     correctsoundmp.start();
                     Toast.makeText(MultipleChoiceActivity.this, "Correct!", Toast.LENGTH_SHORT).show();
+                    Log.d(TAG, "onClick: Correct answer selected");
 
 
                 } else {

@@ -3,12 +3,13 @@ package com.example.nathanrnguyen.flashcode;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
 public class GoogleDriveActivity extends AppCompatActivity {
-
+    private static final String TAG = "GoogleDriveActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,9 @@ public class GoogleDriveActivity extends AppCompatActivity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setDisplayZoomControls(true);
         webview.loadUrl("https://drive.google.com/open?id=1akC0_BJx2uvd70S21i6wQ4tWpn1mXQH1");
+
+        Log.d(TAG, "Google drive activity initialised ");
+
 
     }
 }
