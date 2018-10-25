@@ -47,7 +47,7 @@ implements YouTubePlayer.OnInitializedListener {
             youTubeInitializationResult.getErrorDialog(this, REQUEST_CODE).show();
         }
         else{
-            String errorMessage = String.format("There was an error initializing the YouTubePlayer (%1$s)", youTubeInitializationResult.toString());
+            String errorMessage = String.format("Something went wrong initializing the YouTubePlayer/Video (%1$s)", youTubeInitializationResult.toString());
             Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show();
         }
 

@@ -5,6 +5,7 @@ public class QuestionLibrary {
 
 
     private String questions [] = {
+            //Questions are stored in an array
             //Q1
             "Which loop has their testing condition checked before the initial execution?",
 
@@ -94,6 +95,7 @@ public class QuestionLibrary {
         String answer = correctAnswer[a];
         return answer;
     }
+    //Returns the question array, to test against question number when end of array is reached
     public String[] getQuestions() {
         return questions;
     }
